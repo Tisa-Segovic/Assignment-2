@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+	<head>
+		<title>Hanger Image Information</title>
+		
+	 	<link rel = "stylesheet"
+	   	type = "text/css"
+	  	href = "externalCSS.css" />
+		
+	</head>
+  	
+
+  	<body>
+  	
+  		<div class="container">
+	  		<h1>Hanger - An Icon of Fashion</h1>
+	  		
+	  		<p>Some historians believe President Thomas Jefferson invented a forerunner of the wooden clothes hanger. However, today's 
+	  		most-used hanger, the shoulder-shaped wire hanger, was inspired by a coat hook that was invented in 1869 by O. A. North of New
+	  		Britain, Connecticut. An employee of the Timberlake Wire and Novelty Company, Albert J. Parkhouse of Jackson, Michigan has 
+	  		also been credited with the invention. The story goes that one morning in 1903, Parkhouse arrived to work to find that all coat
+	  		hooks were taken. Annoyed, he took a piece of wire, bent it into the shape we would recognize today, and hung his coat. Also 
+	  		credited is Christopher Cann in 1876 as an engineering student at Boston University.</p>
+	  		
+	  		<img style="margin:15px; margin-top: 8px" align="middle" src="https://static.thenounproject.com/png/337564-200.png" alt="Hanger"
+	  		width="70" height="75"/>
+	  		
+	  		<p>The Height of an image is 75px, and the width of an image is 70px.</p>
+	  		
+	  		<p><b>The Date is: </b></p><p id="date"></p>
+	  		<script type="text/javascript">
+		  		var dateObj = new Date();
+		  		var month = dateObj.getUTCMonth() + 1; //months from 1-12
+		  		var day = dateObj.getUTCDate();
+		  		var year = dateObj.getUTCFullYear();
+	
+		  		newdate = year + "/" + month + "/" + day;
+		  		document.getElementById("date").innerHTML = newdate;
+	  		</script><br>
+	  		
+	  		<p><b>The Day is: </b></p><p id="day"></p>
+	  		<script>
+		  		var d = new Date();
+		  		var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+		  		document.getElementById("day").innerHTML = days[d.getDay()];
+	  		</script>
+	  		
+	  		
+		</div>
+		
+	</body>
+	
+</html>
+

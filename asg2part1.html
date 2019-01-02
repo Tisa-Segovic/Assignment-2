@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+	<head>
+		<title>Welcome Page</title>
+		
+	 	<link rel = "stylesheet"
+	   	type = "text/css"
+	  	href = "asg2part1.css" />	
+		
+	</head>
+  	
+
+  	<body>
+  	
+  		<div class="container">
+  	
+  		<header>
+  			<h1>Welcome to the world of the things I love.</h1>
+  		</header>
+  		
+  		
+  		<nav>
+	  		<a href="../MAIN/index.html"><b>Home</b></a> |
+	  		<a href="../Page1/html1.html">7 New Shoppers</a> |
+	  		<a href="../Page2/html2.html">Maddenig Boots</a> |
+	  		<a href="../Page3/html3.html">Max Mara Teddy Coat</a> |
+	  		<a href="../Page4/html4.html">Skirt Domination</a> |
+  		</nav><br>
+  		
+  		
+  		<!-- JavaScript Funtion(s) is here -->
+		<p id="p1" onclick="swapT()">Here is something that I really care about - following the fashion industry and wrtting about
+		   the types of fashion that breaks headlines. So now let's talk about some of the Fall 2018 fashion
+		   trends that you might have seen aroudn the block, but are unsure how you can pull off. </p>
+		<p id="p2" onclick="swapT()">I personally suggest to change the design of the site, if your color preference is different compared to
+		   the one currently displayed, if you have any sight problems, or need visual aid in viewing the website.</p>	
+		  
+		<!-- JavaScript Funtion is here -->
+		<h4 id="pp2"> Before you start, feel free to click <i>here</i> to change this pages design - hope you enjoy it!</h4>		
+	 	<button class="button" onclick="change()"><b>Change this page's design</b></button>
+		 	
+		   
+		<h4>Please fill out this form so I could contact you for new <i>fashion alerts</i>!</h4>
+		
+		<!-- JavaScript Funtion is here -->
+		<div id="floated-imgs">
+			<img id="img1" onclick="swapI()" style="margin:15px; margin-right: 27px; margin-top: 70px" src="https://www.fashion.hr/easyedit/UserFiles/rwd_images/adidas-rita-ora/_rwd_dscf4635/dscf4635_
+			840_472.jpeg" alt="Model 1" width="340" height="490"/>
+			
+			<img id="img2" onclick="swapI()" style="margin:15px; margin-right: 27px" src="https://www.fashion.hr/easyedit/UserFiles/rwd_image/ukrasi-za-kosu/domjanic/ivica-skoko/
+			mallorca/gucci-dior/haljine-pletivo/margiela/nike/domla/martens/pod-zidom/vj/hao-design/ivica-skoko/oversized-kaputi/
+			_rwd_3/3_840_472.jpeg" alt="Model 2" width="342" height="464"/>
+		</div>
+		
+		<form>
+		
+    			<legend>Personal information:</legend>
+				  First name:<br>
+				  <input type="text" name="firstname"><br>
+				  
+				  Last name:<br>
+				  <input type="text" name="lastname"><br>
+				  
+				  Email:<br>
+				  <input type="email" name="email"><br>
+				  
+				  <br>
+				  <input type="radio" name="gender" value="male"> Male<br>
+				  <input type="radio" name="gender" value="female"> Female<br><br>
+				  
+				  How would you describe your style?<br>
+				  <select>
+				  	  <option value="none">Select</option>
+				  	  <option value="boho">Bohemian</option>
+					  <option value="casual">Casual</option>
+					  <option value="formal">Formal</option>
+					  <option value="business">Business</option>
+				  </select><br>
+				  
+				  Please specify:<br>
+				  <select>
+				  	  <option value="none">Select</option>
+					  <optgroup label="Bohemian">
+					    <option value="hippie">Hipster</option>
+					    <option value="skater">Skater</option>
+					  </optgroup>
+					  <optgroup label="Casual">
+					    <option value="busscasual">Business-Casual</option>
+					    <option value="home">Homeware</option>
+					  </optgroup>
+					  <optgroup label="Formal">
+					    <option value="work">Work</option>
+					    <option value="busscasual">Business-Casual</option>
+					  </optgroup>
+					  <optgroup label="Business">
+					    <option value="professional">Professional</option>
+					    <option value="meeting">Meeting-Attire</option>
+					  </optgroup>
+				  </select><br><br>
+				  
+				  
+				  <!-- JavaScript Funtion(s) is here -->
+				  What is the weather temperature where you live? Please provide in Fahrenheit, and if you are from our 
+				  European audience, please provide in Celsius.<br>
+				  <b>Fahrenheit:  </b><input id="inputFahrenheit" oninput="converter(this.value)" 
+  					 onchange="converter(this.value)" type="number" placeholder="Fahrenheit"><br>
+				  <b>Celsius:  </b><span id="outputCelsius"></span><br><br>
+
+				  
+				  What type of clothes do you usually buy (check all that apply):<br>
+				  <input type="checkbox" name="c1" value="c1">Tees<br>
+				  <input type="checkbox" name="c2" value="c2">Sweaters<br>
+				  <input type="checkbox" name="c3" value="c3">Cardigans<br>
+				  <input type="checkbox" name="c4" value="c4">Jeans<br>
+				  <input type="checkbox" name="c5" value="c5">Slacks<br><br>
+				  
+				  How many times do you shop per month? <input type="number" name="shoptimes" min="1" max="31"><br><br>
+				  On the scale from <i>min</i> to <i>max</i>, how fashionable would you say you are?<br>
+				  <input type="range" name="fashionablelvl" min="0" max="10"><br><br>
+				  
+
+				  What would you like me to know about you?<br>
+				  <textarea rows="6" cols="50; "></textarea><br>
+				  
+				  What is the type of fashion that you follow?<br>
+				  <textarea rows="6" cols="50"></textarea><br><br>
+				  
+				  Date you would like your subscription to start:<br>
+				  <input type="date" name="date"><br>
+				  
+				  <br>
+				  <input type="submit" value="Submit">
+			  </fieldset>
+		</form>
+		
+		<!-- JavaScript Funtion is here -->
+		<p onclick="randArray()"><b>Thank you for completing the survey!</b> Now, you are invited to enter the raffle, where you will be 
+		awarded a randomly selected gift from our site. To see all of the available awards for you to choose from click anywhere on this
+		paragraph: <p id="demo"></p></p>
+		
+		<div><p>Please click to
+		<button class="prizeButton" onclick="winPrize()">Win a Prize</button><p id="prize"></p></p></div>
+		
+
+		<!-- JavaScript Funtion is here -->
+		<footer>
+		  <h6>Posted by: Tisa Segovic. Contact information: <a href="mailto:te557@stern.nyu.edu">te557@stern.nyu.edu</a>.
+		  <img id="newdocimg" onclick="newDoc()" style="margin:15px; margin-top: 8px" align="middle" 
+		  src="https://static.thenounproject.com/png/337564-200.png" alt="Hanger" width="40" height="50"/>
+		  </h6>
+		</footer>
+		
+		
+		</div>
+		
+	<script type="text/javascript"
+ 	src="asg2part1.js"></script>
+ 	
+	</body>
+	
+</html>
+

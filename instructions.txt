@@ -1,0 +1,52 @@
+Create the six JavaScript functions mentioned below in a file called asg2part1.html and paste a link to the file into the NYU 
+Classes text dialog box. You should also link to the page from your main homepage. All six JavaScript functions should be loaded
+ from one external JavaScipt file called asg2part1.js.
+
+1. Style Application: 
+Include an external JavaScript function that changes at least five styles related to the document and an<h1> element. You could, 
+for instance, change the background color, the text color, the font size and font type, the border, or the padding of an element.
+The script should be triggered by an event“onclick=change()”, for instance by associating the event with a button.
+
+
+2. Prize application: Include a JavaScript function called randArray() in the external script file that does the following:
+	A) Creates an array of at least five items that people can win.
+	B) Uses a loop to print all of the array elements, i.e. outputs the prize names.
+	C) Allows the user to select one of the elements randomly from this array using the math random methods. The prizes would 
+	match the value of the array element selected randomly by the user. The function should be triggered when the user clicks a 
+	button labelled Win a Prize using onclick().
+	Hint: Remember that you are randomizing the array index value.
+	D) Displays the result into the document inside a div element with id=”prize”.
+	
+	
+3. Swap text application: Add a JavaScript function called swapT() that does the following:
+	A) You should have two paragraphs inside your HTML page with unique id‘s: id=”p1″ and id=”p2″.
+	B) The function should be triggered when the user clicks anywhere on these two paragraphs using the onclick() event.
+	C) The function should swap the text of the two paragraphs each time you click on either of the paragraphs.
+	
+	
+4. Swap image application: Add a JavaScript function called swapI() that does the following:
+	A) You should have two images inside your HTML page with unique id‘s: id=”img1″ and id=”img2″.
+	B) The function should be triggered when the user clicks anywhere on these two images using the onclick() event.
+	C) The function should swap the two images each time you click on either of the images.
+	
+	
+5. Generate new document application: Add Javascript function called newDoc() to the external script file. This function should
+be triggered when you click on an image. When the image is clicked, the function should open a new document and write information
+about the image into a new document (that should have a custom design loaded from an external CSS file) using the Document Object 
+Model:
+	A) A heading using <h1> to provide an image title;
+	B) A paragraph with information about the image;
+	C) Display the image again inside this document;
+	D) Display the height and width of image using the properties of the image;
+	E) Display the current day, date, month, and the year; and
+	F) Display the day of the week such as Wednesday or Thursday.
+	
+
+6. Simple converter application: Use form elements such as input to make the user enter a quantity. The application should convert
+this quantity into another measure, for instance miles to kilometers or Fahrenheit to Celsius. The result should be displayed in 
+red, inside a textarea element on the same page.
+
+Example: The user enters the amount in miles inside the input field, then clicks a button called Convert. The program then outputs
+the result in kilometers inside a textarea element on the same page.
+
+
